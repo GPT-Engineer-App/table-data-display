@@ -42,7 +42,7 @@ const Index = () => {
               </Tr>
             </Thead>
             <Tbody>
-              {filteredData.map((item) => (
+              {filteredData.slice(0, 5).map((item) => (
                 <Tr key={item.id}>
                   <Td>{item.id}</Td>
                   <Td>{item.city}</Td>
